@@ -1,0 +1,8 @@
+#用迭代的方法求数字阶乘
+def func(n):
+  result = n
+  for i in range(1,n):
+    result *= i 
+print(func(10))
+#用递归的方法求数字阶乘
+#用lambda表达式求数字阶乘

@@ -1,3 +1,4 @@
+import functools
 #用迭代器计算阶乘
 def func_01(n):
     result = n
@@ -16,3 +17,5 @@ print(func_02(10))
 #用lambda计算阶乘
 result = lambda x : 1 if x ==0 or x ==1 else x*result(x-1)
 print(result(10))
+result = functools.reduce(lambda x,y:x*y, range(1,11))
+print(result)
